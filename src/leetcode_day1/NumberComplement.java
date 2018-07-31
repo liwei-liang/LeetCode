@@ -5,8 +5,8 @@ public class NumberComplement {
 		int res = num ^ comBit(num);
 		return res;
 	}
-
 	private static int comBit(int num) {
+		
 		int mark = 0;
 		while (num > 0) {
 			mark++;
@@ -20,9 +20,13 @@ public class NumberComplement {
 	}
 	
 	public static void main(String[] args){
-		findComplement(2147483647);
-		System.out.println(Math.pow(2,31));
-		System.out.println((int) Math.pow(2,31));
+        int i = 1;
+        int a = i++;
+        int b = i;
+        System.out.println(b);
+//		findComplement(2147483647);
+//		System.out.println(Math.pow(2,31));
+//		System.out.println((int) Math.pow(2,31));
 
 	}
 }

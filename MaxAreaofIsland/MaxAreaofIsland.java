@@ -1,5 +1,7 @@
 package leetcode_day1;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class MaxAreaofIsland {
 	public int maxAreaOfIsland(int[][] grid) {
 		int[][] bol = new int[grid.length][grid[0].length];
@@ -19,6 +21,7 @@ public class MaxAreaofIsland {
 	}
 
 	public int DFS(int[][] bol, int[][] grid, int i, int j) {
+		ReentrantLock
 		int res = 0;
 		if (bol[i][j] == 0) {
 			res = 1;
